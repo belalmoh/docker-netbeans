@@ -7,7 +7,7 @@ services:
       - DISPLAY=$DISPLAY
 
     volumes:
-      - ./nbProjects:/home/netbeans/NetBeansProjects
+      - ./nbProjects:/root/NetBeansProjects
       - "${HOME}/.Xauthority:/root/.Xauthority:rw"
       - /tmp/.X11-unix:/tmp/.X11-unix
     dns_search: .  

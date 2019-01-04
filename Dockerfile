@@ -18,4 +18,4 @@ RUN wget http://download.netbeans.org/netbeans/8.0.1/final/bundles/netbeans-8.0.
     /tmp/netbeans.sh --silent --state /tmp/state.xml && \
     rm -rf /tmp/*
 
-CMD /usr/local/bin/netbeans-8.0.2/bin/netbeans
+CMD /usr/local/netbeans-8.0.2/bin/netbeans

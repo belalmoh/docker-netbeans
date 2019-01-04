@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  netbeans:
+    build: .
+    environment:
+      - DISPLAY=$DISPLAY
+
+    volumes:
+      - ./nbProjects:/home/netbeans/NetBeansProjects
+      - "${HOME}/.Xauthority:/root/.Xauthority:rw"
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    dns_search: .  
+    network_mode: "host"
